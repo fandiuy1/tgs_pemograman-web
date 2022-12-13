@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='login/fonts/icomoon/style.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='login/css/owl.carousel.min.css')}}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='login/css/bootstrap.min.css')}}">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='login/css/style.css')}}">
+    <title>Login #5</title>
+  </head>
+  <body>
+  
+
+    <div class="contents">
+
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-md-9">
+                <div class="card my-4">
+                  <div class="text-center">
+                <h3 class="text-uppercase">Daftar Anggota</h3>
+              </div>
+              <section>
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-md-9">
+                    <div class="card card-outline card-info">
+                        
+                      <!-- <div class="card-header">
+                        <h3 class="card-title">Tulis Berita</h3>
+                      </div> -->
+          
+                      <div class="card-body">
+                        <form action="" method="post">
+                            <p class="card-title ">{{ sukses }}</p>
+                            <div class="col-md-9">
+                          </div>
+                          <div class="form-group">
+                            <label>Id Anggota</label>
+                            <input type="text" class="form-control" placeholder="Masukkan id anggota" name="id_anggota">
+                          </div>
+                          <br>
+                          <div class="form-group">
+                            <label>kode Anggota</label>
+                            <input type="text" class="form-control" placeholder="Masukkan id anggota" name="kode_anggota">
+                          </div>
+                          <br>
+                          <div class="form-group">
+                            <label>Nama Lengkap</label>
+                            <input type="text" class="form-control" placeholder="Masukkan Nama Lengkap " name="nama_anggota">
+                          </div>
+                          <br>
+                          <div class="form-group">
+                            <label>Jenis Kelamin</label>
+                            <input type="text" class="form-control" placeholder="Jenis Kelamin" name="jk_anggota">
+                          </div>
+                          <br>
+                          <div class="form-group">
+                            <label>jurusan</label>
+                            <input type="text" class="form-control" placeholder="Masukkan Jurusan" name="jurusan_anggota">
+                          </div>
+                          <br>
+                          <div class="form-group">
+                            <label>Nomor Telepon</label>
+                            <input type="text" class="form-control" placeholder="Masukkan nomor hp" name="no_telp_anggota">
+                          </div>
+                          <br>
+                          <div class="form-group">
+                            <label>Alamat</label>
+                            <input type="text" class="form-control" placeholder="Masukkan Alamat" name="alamat_anggota">
+                          </div>
+                          <a>Sudah daftar?</a>
+                        <br>
+                        <form method="POST" enctype="multipart/form-data" action="/uploadFile">
+                          <input type="file" name="uploaded-file" accept=".png">
+                          <input type="submit" value="Submit">
+                          <br>
+                          <br>
+                          <div class="text-right">
+                            <button type="submit" class="btn btn-success">Next -></button>
+                          </div>
+                          <br>
+                        </form>
+                        
+                      </form>
+                      <br>
+                        <a href="/login"><button type="button" class="btn btn-success btn-primary">Login</button></a>
+                        <a><- klik di sini</a></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.col-->
+                </div>
+                <!-- ./row -->
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+    
+    
+
+    <script src="{{ url_for('static',filename='login/js/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='login/js/popper.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='login/js/bootstrap.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='login/js/main.js')}}"></script>
+  </body>
+</html>
